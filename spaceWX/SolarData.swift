@@ -1,27 +1,61 @@
 import Foundation
 
-struct SolarData: Decodable {
-    let aindex: String
-    let kindex: String
+import Foundation
 
-    enum CodingKeys: String, CodingKey {
-        case aindex = "aindex"
-        case kindex = "kindex"
-    }
+struct SolarData {
+    let updated: String
+    let solarFlux: String
+    let aIndex: String
+    let kIndex: String
+    let xray: String
+    let sunspots: String
+    let heliumLine: String
+    let protonFlux: String
+    let electronFlux: String
+    let aurora: String
+    let latDegree: String
+    let solarWind: String
+    let magneticField: String
 
-    // Function to parse XML data
     static func parseXML(data: Data) -> SolarData? {
         let parser = XMLSolarParser()
         if parser.parse(data: data) {
-            return SolarData(aindex: parser.aindex ?? "--", kindex: parser.kindex ?? "--")
+            return SolarData(
+                updated: parser.updated ?? "--",
+                solarFlux: parser.solarFlux ?? "--",
+                aIndex: parser.aIndex ?? "--",
+                kIndex: parser.kIndex ?? "--",
+                xray: parser.xray ?? "--",
+                sunspots: parser.sunspots ?? "--",
+                heliumLine: parser.heliumLine ?? "--",
+                protonFlux: parser.protonFlux ?? "--",
+                electronFlux: parser.electronFlux ?? "--",
+                aurora: parser.aurora ?? "--",
+                latDegree: parser.latDegree ?? "--",
+                solarWind: parser.solarWind ?? "--",
+                magneticField: parser.magneticField ?? "--"
+            )
         }
         return nil
     }
 }
 
+
 class XMLSolarParser: NSObject, XMLParserDelegate {
-    var aindex: String?
-    var kindex: String?
+    var updated: String?
+    var solarFlux: String?
+    var aIndex: String?
+    var kIndex: String?
+    var xray: String?
+    var sunspots: String?
+    var heliumLine: String?
+    var protonFlux: String?
+    var electronFlux: String?
+    var aurora: String?
+    var latDegree: String?
+    var solarWind: String?
+    var magneticField: String?
+
     private var currentElement = ""
 
     func parse(data: Data) -> Bool {
@@ -41,10 +75,32 @@ class XMLSolarParser: NSObject, XMLParserDelegate {
         let trimmed = string.trimmingCharacters(in: .whitespacesAndNewlines)
         if !trimmed.isEmpty {
             switch currentElement {
+            case "updated":
+                updated = trimmed
+            case "solarflux":
+                solarFlux = trimmed
             case "aindex":
-                aindex = trimmed
+                aIndex = trimmed
             case "kindex":
-                kindex = trimmed
+                kIndex = trimmed
+            case "xray":
+                xray = trimmed
+            case "sunspots":
+                sunspots = trimmed
+            case "heliumline":
+                heliumLine = trimmed
+            case "protonflux":
+                protonFlux = trimmed
+            case "electonflux":
+                electronFlux = trimmed
+            case "aurora":
+                aurora = trimmed
+            case "latdegree":
+                latDegree = trimmed
+            case "solarwind":
+                solarWind = trimmed
+            case "magneticfield":
+                magneticField = trimmed
             default:
                 break
             }
@@ -55,3 +111,4 @@ class XMLSolarParser: NSObject, XMLParserDelegate {
         print("XML Parse Error: \(parseError.localizedDescription)")
     }
 }
+
