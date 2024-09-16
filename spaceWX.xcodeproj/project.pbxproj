@@ -11,7 +11,40 @@
 		C418E64A2C988D7C002D5E5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6492C988D7C002D5E5C /* ContentView.swift */; };
 		C418E64C2C988D7E002D5E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C418E64B2C988D7E002D5E5C /* Assets.xcassets */; };
 		C418E64F2C988D7E002D5E5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C418E64E2C988D7E002D5E5C /* Preview Assets.xcassets */; };
+		C418E65D2C988DFA002D5E5C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C418E65C2C988DF9002D5E5C /* WidgetKit.framework */; };
+		C418E65F2C988DFA002D5E5C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C418E65E2C988DFA002D5E5C /* SwiftUI.framework */; };
+		C418E6642C988DFA002D5E5C /* spaceWXWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6632C988DFA002D5E5C /* spaceWXWidget.swift */; };
+		C418E6662C988DFB002D5E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C418E6652C988DFB002D5E5C /* Assets.xcassets */; };
+		C418E66B2C988DFB002D5E5C /* spaceWXWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C418E65A2C988DF9002D5E5C /* spaceWXWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C418E6712C988EA9002D5E5C /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6702C988EA9002D5E5C /* SolarData.swift */; };
+		C418E6732C988EE6002D5E5C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6722C988EE6002D5E5C /* NetworkManager.swift */; };
+		C418E6742C988F36002D5E5C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6722C988EE6002D5E5C /* NetworkManager.swift */; };
+		C418E6752C988F36002D5E5C /* SolarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C418E6702C988EA9002D5E5C /* SolarData.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C418E6692C988DFB002D5E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C418E63C2C988D7C002D5E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C418E6592C988DF9002D5E5C;
+			remoteInfo = spaceWXWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C418E66F2C988DFB002D5E5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C418E66B2C988DFB002D5E5C /* spaceWXWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C418E6442C988D7C002D5E5C /* spaceWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +53,15 @@
 		C418E64B2C988D7E002D5E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C418E64E2C988D7E002D5E5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C418E6502C988D7E002D5E5C /* spaceWX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spaceWX.entitlements; sourceTree = "<group>"; };
+		C418E65A2C988DF9002D5E5C /* spaceWXWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = spaceWXWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C418E65C2C988DF9002D5E5C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C418E65E2C988DFA002D5E5C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C418E6632C988DFA002D5E5C /* spaceWXWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceWXWidget.swift; sourceTree = "<group>"; };
+		C418E6652C988DFB002D5E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C418E6672C988DFB002D5E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C418E6682C988DFB002D5E5C /* spaceWXWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spaceWXWidget.entitlements; sourceTree = "<group>"; };
+		C418E6702C988EA9002D5E5C /* SolarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarData.swift; sourceTree = "<group>"; };
+		C418E6722C988EE6002D5E5C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C418E6572C988DF9002D5E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C418E65F2C988DFA002D5E5C /* SwiftUI.framework in Frameworks */,
+				C418E65D2C988DFA002D5E5C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				C418E6462C988D7C002D5E5C /* spaceWX */,
+				C418E6602C988DFA002D5E5C /* spaceWXWidget */,
+				C418E65B2C988DF9002D5E5C /* Frameworks */,
 				C418E6452C988D7C002D5E5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C418E6442C988D7C002D5E5C /* spaceWX.app */,
+				C418E65A2C988DF9002D5E5C /* spaceWXWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +111,8 @@
 				C418E64B2C988D7E002D5E5C /* Assets.xcassets */,
 				C418E6502C988D7E002D5E5C /* spaceWX.entitlements */,
 				C418E64D2C988D7E002D5E5C /* Preview Content */,
+				C418E6702C988EA9002D5E5C /* SolarData.swift */,
+				C418E6722C988EE6002D5E5C /* NetworkManager.swift */,
 			);
 			path = spaceWX;
 			sourceTree = "<group>";
@@ -69,6 +125,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C418E65B2C988DF9002D5E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C418E65C2C988DF9002D5E5C /* WidgetKit.framework */,
+				C418E65E2C988DFA002D5E5C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C418E6602C988DFA002D5E5C /* spaceWXWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C418E6632C988DFA002D5E5C /* spaceWXWidget.swift */,
+				C418E6652C988DFB002D5E5C /* Assets.xcassets */,
+				C418E6672C988DFB002D5E5C /* Info.plist */,
+				C418E6682C988DFB002D5E5C /* spaceWXWidget.entitlements */,
+			);
+			path = spaceWXWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +155,34 @@
 				C418E6402C988D7C002D5E5C /* Sources */,
 				C418E6412C988D7C002D5E5C /* Frameworks */,
 				C418E6422C988D7C002D5E5C /* Resources */,
+				C418E66F2C988DFB002D5E5C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C418E66A2C988DFB002D5E5C /* PBXTargetDependency */,
 			);
 			name = spaceWX;
 			productName = spaceWX;
 			productReference = C418E6442C988D7C002D5E5C /* spaceWX.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C418E6592C988DF9002D5E5C /* spaceWXWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C418E66C2C988DFB002D5E5C /* Build configuration list for PBXNativeTarget "spaceWXWidgetExtension" */;
+			buildPhases = (
+				C418E6562C988DF9002D5E5C /* Sources */,
+				C418E6572C988DF9002D5E5C /* Frameworks */,
+				C418E6582C988DF9002D5E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = spaceWXWidgetExtension;
+			productName = spaceWXWidgetExtension;
+			productReference = C418E65A2C988DF9002D5E5C /* spaceWXWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +195,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					C418E6432C988D7C002D5E5C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					C418E6592C988DF9002D5E5C = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -118,6 +216,7 @@
 			projectRoot = "";
 			targets = (
 				C418E6432C988D7C002D5E5C /* spaceWX */,
+				C418E6592C988DF9002D5E5C /* spaceWXWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +231,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C418E6582C988DF9002D5E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C418E6662C988DFB002D5E5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +246,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C418E6732C988EE6002D5E5C /* NetworkManager.swift in Sources */,
+				C418E6712C988EA9002D5E5C /* SolarData.swift in Sources */,
 				C418E64A2C988D7C002D5E5C /* ContentView.swift in Sources */,
 				C418E6482C988D7C002D5E5C /* spaceWXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C418E6562C988DF9002D5E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C418E6642C988DFA002D5E5C /* spaceWXWidget.swift in Sources */,
+				C418E6742C988F36002D5E5C /* NetworkManager.swift in Sources */,
+				C418E6752C988F36002D5E5C /* SolarData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C418E66A2C988DFB002D5E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C418E6592C988DF9002D5E5C /* spaceWXWidgetExtension */;
+			targetProxy = C418E6692C988DFB002D5E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C418E6512C988D7E002D5E5C /* Debug */ = {
@@ -268,6 +395,7 @@
 		C418E6542C988D7E002D5E5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = spaceWX/spaceWX.entitlements;
@@ -295,6 +423,7 @@
 		C418E6552C988D7E002D5E5C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = spaceWX/spaceWX.entitlements;
@@ -319,6 +448,62 @@
 			};
 			name = Release;
 		};
+		C418E66D2C988DFB002D5E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = spaceWXWidget/spaceWXWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L45BYK64G9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spaceWXWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spaceWXWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = radio.w1grd.spaceWX.spaceWXWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C418E66E2C988DFB002D5E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = spaceWXWidget/spaceWXWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L45BYK64G9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = spaceWXWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = spaceWXWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = radio.w1grd.spaceWX.spaceWXWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +521,15 @@
 			buildConfigurations = (
 				C418E6542C988D7E002D5E5C /* Debug */,
 				C418E6552C988D7E002D5E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C418E66C2C988DFB002D5E5C /* Build configuration list for PBXNativeTarget "spaceWXWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C418E66D2C988DFB002D5E5C /* Debug */,
+				C418E66E2C988DFB002D5E5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
